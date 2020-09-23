@@ -1,0 +1,38 @@
+VERSION 5.00
+Begin VB.Form frmBottom 
+   AutoRedraw      =   -1  'True
+   BorderStyle     =   0  'None
+   Caption         =   "Form1"
+   ClientHeight    =   3090
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   4680
+   LinkTopic       =   "Form1"
+   ScaleHeight     =   3090
+   ScaleWidth      =   4680
+   ShowInTaskbar   =   0   'False
+   StartUpPosition =   3  'Windows Default
+   Begin VB.Line Line1 
+      BorderStyle     =   3  'Dot
+      X1              =   0
+      X2              =   3435
+      Y1              =   0
+      Y2              =   0
+   End
+End
+Attribute VB_Name = "frmBottom"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private Sub Form_Resize()
+
+    Line1.X1 = 0
+    Line1.X2 = Me.Width
+    Line1.Y1 = 0
+    Line1.Y2 = 0
+    Me.Height = 10
+
+End Sub
+
+
